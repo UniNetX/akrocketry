@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Live site: https://akrocketry.vercel.app —
-  Submit https://akrocketry.vercel.app/sitemap.xml in Google Search Console → Sitemaps.
--->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://akrocketry.vercel.app/</loc>

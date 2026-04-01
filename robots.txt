@@ -1,4 +1,4 @@
-# Ardrey Kell Rocketry Club — https://akrocketry.vercel.app/
+# Ardrey Kell Rocketry - https://akrocketry.vercel.app/
 
 User-agent: *
 Allow: /
