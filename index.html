@@ -8,7 +8,7 @@
       name="description"
       content="Ardrey Kell Rocketry Club — design, build, and launch. American Rocketry Challenge teams, outreach, and community launches."
     />
-    <link rel="canonical" href="__AK_ROCKETRY_SITE_URL__/" />
+    <link rel="canonical" href="https://akrocketry.vercel.app/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Ardrey Kell Rocketry Club" />
     <meta property="og:title" content="AK Rocketry Club — Ardrey Kell High School" />
@@ -16,8 +16,8 @@
       property="og:description"
       content="Design, build, and launch with two American Rocketry Challenge teams, CHMS outreach, and club launch days. All skill levels welcome."
     />
-    <meta property="og:url" content="__AK_ROCKETRY_SITE_URL__/" />
-    <meta property="og:image" content="__AK_ROCKETRY_SITE_URL__/images/rocket-launch.png" />
+    <meta property="og:url" content="https://akrocketry.vercel.app/" />
+    <meta property="og:image" content="https://akrocketry.vercel.app/images/rocket-launch.png" />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="AK Rocketry Club — Ardrey Kell High School" />
@@ -25,9 +25,10 @@
       name="twitter:description"
       content="American Rocketry Challenge teams, middle school outreach, and safety-first launches at Ardrey Kell."
     />
-    <meta name="twitter:image" content="__AK_ROCKETRY_SITE_URL__/images/rocket-launch.png" />
+    <meta name="twitter:image" content="https://akrocketry.vercel.app/images/rocket-launch.png" />
     <title>AK Rocketry Club — Home</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="images/akhs-rocketry-logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="images/akhs-rocketry-logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,6 +36,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Ardrey Kell Rocketry Club",
+        "alternateName": "AK Rocketry",
+        "description": "Hands-on rocketry club at Ardrey Kell High School — American Rocketry Challenge teams, CHMS mentorship, and community launches.",
+        "url": "https://akrocketry.vercel.app/",
+        "logo": "https://akrocketry.vercel.app/images/akhs-rocketry-logo.png",
+        "sameAs": [
+          "https://www.instagram.com/akhsrocketry/",
+          "https://band.us/n/aca8bbN3yeG92",
+          "https://akhsicc.github.io/"
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -42,13 +59,6 @@
       <header class="site-header">
         <div class="site-header__inner">
           <a class="logo" href="index.html">
-            <span class="logo__mark" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M12 2l4.5 9h-2.5l.9 6h-3.8l.9-6H7.5L12 2zm-2 15h4v1.2h-2.2L12 21h-1l-.8-2.8H10V17z"
-                />
-              </svg>
-            </span>
             AK Rocketry
           </a>
           <button
@@ -172,11 +182,14 @@
             <div class="site-footer__brand">
               <a class="footer-brand" href="index.html">
                 <span class="logo__mark" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                      d="M12 2l4.5 9h-2.5l.9 6h-3.8l.9-6H7.5L12 2zm-2 15h4v1.2h-2.2L12 21h-1l-.8-2.8H10V17z"
-                    />
-                  </svg>
+                  <img
+                    class="logo__mark-img"
+                    src="images/akhs-rocketry-logo.png"
+                    alt=""
+                    width="500"
+                    height="500"
+                    decoding="async"
+                  />
                 </span>
                 AK Rocketry
               </a>
