@@ -1,0 +1,28 @@
+Add your photos to this folder using the filenames below (or similar). The website plan (WEBSITE_PLAN.md) explains how each will be used.
+
+Required / high priority
+-------------------------
+officer-anish.png        Vice president (Anish) — on About page
+officer-samarth.png      Secretary (Samarth) — on About page
+officer-kartheek.png     President (Kartheek) — on About page
+hero-launch.jpg          Wide shot: rocket on pad, team, or launch (hero banner) [optional; home uses rocket-launch.png]
+team-group.jpg           Whole club or leadership at school or field
+officers.jpg             Officer board headshots (or individual: officer-president.jpg, etc.)
+arc-build.jpg            Two teams working on ARC rockets (blur faces if needed for minors)
+chms-outreach.jpg        Middle school outreach session (permission if showing students)
+launch-field.jpg         General launch day atmosphere
+safety-briefing.jpg      Optional: safety culture / prep
+
+Logo / branding (if you have permission)
+-----------------------------------------
+club-logo.png            Your club wordmark or crest (transparent PNG ideal)
+school-note.txt          Note: Official AK knight logo often needs school approval—see plan doc
+
+Optional extras
+---------------
+rocket-detail.jpg        Close-up fins, payload, paint
+altitude-recovery.jpg    Altimeter, chute, landed rocket
+competition-day.jpg      ARC competition or travel
+sponsor-thanks.jpg       Sponsor logos provided as separate files preferred (SVG/PNG)
+
+Naming: lowercase, hyphens, Web-safe. Prefer JPEG for photos, PNG for logos.

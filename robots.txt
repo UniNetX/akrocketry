@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Phase 3 — After deploy, add one line with your absolute sitemap URL, for example:
+# Sitemap: https://your-account.github.io/your-repo/sitemap.xml
