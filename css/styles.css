@@ -1434,11 +1434,6 @@ main {
   text-align: center;
 }
 
-.page-head--hero-photo h1 {
-  color: #f4f8fc;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45), 0 2px 28px rgba(0, 0, 0, 0.28);
-}
-
 .page-head--hero-photo .page-head__lede {
   margin-inline: auto;
   color: rgba(244, 248, 252, 0.94);
@@ -1466,6 +1461,14 @@ main {
   font-weight: 700;
   letter-spacing: -0.03em;
   color: var(--purple-deep);
+}
+
+/* After .page-head h1 so color/text-shadow win over purple-deep on photo heroes */
+.page-head--hero-photo h1 {
+  color: #f4f8fc;
+  font-size: clamp(2rem, 4.5vw, 2.65rem);
+  font-weight: 800;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45), 0 2px 28px rgba(0, 0, 0, 0.28);
 }
 
 .page-head p {
