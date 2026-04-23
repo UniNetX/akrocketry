@@ -1,21 +1,31 @@
 (function () {
   var toggle = document.querySelector("[data-nav-toggle]");
   var menu = document.querySelector("[data-nav-menu]");
+  var navGroups = menu ? menu.querySelectorAll("[data-nav-group]") : [];
+
+  function closeNavGroups() {
+    navGroups.forEach(function (g) {
+      g.removeAttribute("open");
+    });
+  }
+
   if (toggle && menu) {
     var mq = window.matchMedia("(max-width: 56rem)");
 
     function syncNavTabIndex() {
       var mobile = mq.matches;
       var expanded = toggle.getAttribute("aria-expanded") === "true";
-      menu.querySelectorAll("a").forEach(function (link) {
-        if (mobile && !expanded) link.setAttribute("tabindex", "-1");
-        else link.removeAttribute("tabindex");
+      var focusables = menu.querySelectorAll("a, summary");
+      focusables.forEach(function (el) {
+        if (mobile && !expanded) el.setAttribute("tabindex", "-1");
+        else el.removeAttribute("tabindex");
       });
     }
 
     function setOpen(open) {
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       menu.classList.toggle("is-open", open);
+      if (!open) closeNavGroups();
       syncNavTabIndex();
     }
 
@@ -31,13 +41,33 @@
     });
 
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key !== "Escape") return;
+      var anyGroupOpen = false;
+      navGroups.forEach(function (g) {
+        if (g.hasAttribute("open")) anyGroupOpen = true;
+      });
+      if (anyGroupOpen) {
+        closeNavGroups();
+        var activeSummary = menu.querySelector("[data-nav-group] > summary");
+        if (activeSummary && document.activeElement && menu.contains(document.activeElement)) {
+          activeSummary.focus();
+        }
+        return;
+      }
+      setOpen(false);
     });
 
     document.addEventListener("click", function (e) {
-      if (!menu.classList.contains("is-open")) return;
-      if (toggle.contains(e.target) || menu.contains(e.target)) return;
-      setOpen(false);
+      if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+        if (menu.classList.contains("is-open")) setOpen(false);
+        closeNavGroups();
+        return;
+      }
+      if (menu.contains(e.target)) {
+        navGroups.forEach(function (g) {
+          if (!g.contains(e.target) && g.hasAttribute("open")) g.removeAttribute("open");
+        });
+      }
     });
 
     if (typeof mq.addEventListener === "function") {

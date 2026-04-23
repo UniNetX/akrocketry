@@ -39,7 +39,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -80,8 +80,14 @@
           </button>
           <nav id="site-nav" class="nav" data-nav-menu aria-label="Primary">
             <a href="index.html" class="is-active">Home</a>
-            <a href="arc.html">ARC</a>
-            <a href="outreach.html">CHMS program</a>
+            <details class="nav__group" data-nav-group>
+              <summary class="nav__summary">Programs<span class="nav__chev" aria-hidden="true"></span></summary>
+              <div class="nav__panel">
+                <a href="programs.html">Summer programs</a>
+                <a href="arc.html">American Rocketry Challenge</a>
+                <a href="outreach.html">Middle school (CHMS)</a>
+              </div>
+            </details>
             <a href="launches.html">Launches</a>
             <a href="resources.html">Resources</a>
             <a href="about.html">About</a>
@@ -122,13 +128,25 @@
         <section class="section" aria-labelledby="pillars-heading">
           <div class="wrap">
             <div class="section__head">
-              <h2 id="pillars-heading">What we do</h2>
+              <p class="eyebrow">The programs</p>
+              <h2 id="pillars-heading">One club, three tables we actually sit at.</h2>
               <p>
-                Competition teams, middle school outreach, and community launch days — one club, three pathways into
-                rocketry.
+                A summer where small cohorts chase one problem. A fall and spring where two teams grind toward
+                qualification. And a middle school program where we teach the thing that got us here.
               </p>
             </div>
             <div class="cards cards--3">
+              <article class="card">
+                <span class="card__tag">Summer</span>
+                <h3>Summer programs</h3>
+                <p>
+                  <strong>Registration for all tracks &mdash; coming soon.</strong> Between seasons we split into tracks
+                  &mdash; thrust vectoring (hardest), solid dual-stage, then dual-stage water rocket (altitude wins)
+                  &mdash; teams ship a paper for the club engineering journal and compete for summer prizes when enough
+                  teams sign up.
+                </p>
+                <a class="card__link" href="programs.html">See the tracks &rarr;</a>
+              </article>
               <article class="card">
                 <span class="card__tag">Competition</span>
                 <h3>American Rocketry Challenge</h3>
@@ -136,24 +154,16 @@
                   Two student teams design, iterate, and fly toward qualification. Engineering fundamentals, tight
                   deadlines, real flight hardware.
                 </p>
-                <a class="card__link" href="arc.html">Explore ARC →</a>
+                <a class="card__link" href="arc.html">Explore ARC &rarr;</a>
               </article>
               <article class="card">
-                <span class="card__tag">CHMS program</span>
-                <h3>Community House Middle School</h3>
+                <span class="card__tag">Outreach</span>
+                <h3>Middle school (CHMS)</h3>
                 <p>
-                  Basics program for middle schoolers — <strong>coming soon.</strong> Safety, parts of a rocket, stable
-                  flight, and low-power fundamentals.
+                  High school mentors introducing CHMS students to rocketry basics &mdash;
+                  <strong>coming soon.</strong> Safety, parts of a rocket, stable flight, low-power fundamentals.
                 </p>
-                <a class="card__link" href="outreach.html">CHMS program — coming soon →</a>
-              </article>
-              <article class="card">
-                <span class="card__tag">Community</span>
-                <h3>Launches &amp; events</h3>
-                <p>
-                  Club launch days, test flights, and shared equipment — the rhythm of the season outside the classroom.
-                </p>
-                <a class="card__link" href="launches.html">Safety &amp; field days →</a>
+                <a class="card__link" href="outreach.html">CHMS program &rarr;</a>
               </article>
             </div>
           </div>
@@ -206,21 +216,21 @@
               </p>
             </div>
             <div class="site-footer__col">
-              <h3 class="site-footer__heading">Club</h3>
+              <h3 class="site-footer__heading">Programs</h3>
               <ul class="site-footer__links">
-                <li><a href="about.html">About</a></li>
-                <li><a href="#join">Join on Band</a></li>
-                <li><a href="arc.html">ARC</a></li>
+                <li><a href="programs.html">Summer programs</a></li>
+                <li><a href="arc.html">American Rocketry Challenge</a></li>
+                <li><a href="outreach.html">Middle school (CHMS)</a></li>
                 <li><a href="launches.html">Launches &amp; safety</a></li>
               </ul>
             </div>
             <div class="site-footer__col">
-              <h3 class="site-footer__heading">More</h3>
+              <h3 class="site-footer__heading">Club</h3>
               <ul class="site-footer__links">
-                <li><a href="outreach.html">CHMS outreach</a></li>
-                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#join">Join on Band</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
               </ul>
             </div>
             <div class="site-footer__col">
@@ -234,7 +244,8 @@
                 <li>
                   <a href="https://akhsicc.github.io/" rel="noopener noreferrer" target="_blank">AK ICC</a>
                 </li>
-                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
           </div>

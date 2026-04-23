@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -51,8 +51,14 @@
           </button>
           <nav id="site-nav" class="nav" data-nav-menu aria-label="Primary">
             <a href="index.html">Home</a>
-            <a href="arc.html" class="is-active">ARC</a>
-            <a href="outreach.html">CHMS program</a>
+            <details class="nav__group is-active" data-nav-group>
+              <summary class="nav__summary">Programs<span class="nav__chev" aria-hidden="true"></span></summary>
+              <div class="nav__panel">
+                <a href="programs.html">Summer programs</a>
+                <a href="arc.html" class="is-active">American Rocketry Challenge</a>
+                <a href="outreach.html">Middle school (CHMS)</a>
+              </div>
+            </details>
             <a href="launches.html">Launches</a>
             <a href="resources.html">Resources</a>
             <a href="about.html">About</a>
@@ -275,21 +281,21 @@
               </p>
             </div>
             <div class="site-footer__col">
-              <h3 class="site-footer__heading">Club</h3>
+              <h3 class="site-footer__heading">Programs</h3>
               <ul class="site-footer__links">
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html#join">Join on Band</a></li>
-                <li><a href="arc.html">ARC</a></li>
+                <li><a href="programs.html">Summer programs</a></li>
+                <li><a href="arc.html">American Rocketry Challenge</a></li>
+                <li><a href="outreach.html">Middle school (CHMS)</a></li>
                 <li><a href="launches.html">Launches &amp; safety</a></li>
               </ul>
             </div>
             <div class="site-footer__col">
-              <h3 class="site-footer__heading">More</h3>
+              <h3 class="site-footer__heading">Club</h3>
               <ul class="site-footer__links">
-                <li><a href="outreach.html">CHMS outreach</a></li>
-                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#join">Join on Band</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
               </ul>
             </div>
             <div class="site-footer__col">
@@ -303,7 +309,8 @@
                 <li>
                   <a href="https://akhsicc.github.io/" rel="noopener noreferrer" target="_blank">AK ICC</a>
                 </li>
-                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
