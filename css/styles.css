@@ -2871,6 +2871,47 @@ main {
   color: rgba(255, 232, 212, 0.82);
 }
 
+.programs-head__registration-lede {
+  margin: 0 0 0.85rem;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.5;
+  color: #fff8f0;
+}
+
+.programs-head__registration-list {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: rgba(255, 248, 240, 0.95);
+}
+
+.programs-head__registration-list li + li {
+  margin-top: 0.35rem;
+}
+
+.programs-head__registration-cta {
+  margin: 0 0 0.65rem;
+}
+
+.programs-head__registration-meta {
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: rgba(255, 232, 212, 0.88);
+}
+
+.programs-head__registration-meta a {
+  color: #ffe8d4;
+  font-weight: 600;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.programs-head__registration-meta a:hover {
+  color: #fff;
+}
+
 .programs-head__lede {
   font-size: clamp(1.05rem, 1.4vw, 1.2rem);
   line-height: 1.55;
@@ -3148,4 +3189,151 @@ main {
   flex-wrap: wrap;
   gap: 0.75rem;
   margin: 0;
+}
+
+/* —— Engineering journal page —— */
+.journal-standards {
+  margin: 0 0 1.5rem;
+  padding: 1.15rem 1.25rem 1.2rem;
+  max-width: 52ch;
+  background: linear-gradient(135deg, rgba(15, 40, 71, 0.06) 0%, rgba(200, 68, 42, 0.06) 100%);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--accent-deep);
+  border-radius: var(--radius-sm);
+}
+
+.journal-standards h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+}
+
+.journal-standards p {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.journal-paths {
+  display: grid;
+  gap: 1.25rem;
+  margin: 0 0 clamp(2rem, 4vw, 2.75rem);
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 44rem) {
+  .journal-paths {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.journal-paths > li {
+  margin: 0;
+  padding: 1.25rem 1.35rem 1.35rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.journal-paths h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.journal-paths p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.journal-process {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: journalstep;
+  max-width: 42rem;
+}
+
+.journal-process li {
+  position: relative;
+  margin: 0;
+  padding: 0 0 1.35rem 2.75rem;
+  border-left: 2px solid var(--rule);
+}
+
+.journal-process li:last-child {
+  padding-bottom: 0;
+  border-left-color: transparent;
+}
+
+.journal-process li::before {
+  counter-increment: journalstep;
+  content: counter(journalstep);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.85rem;
+  height: 1.85rem;
+  margin-left: -0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--accent-deep);
+  background: var(--accent-soft);
+  border: 1px solid rgba(200, 68, 42, 0.25);
+  border-radius: 50%;
+}
+
+.journal-process h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.journal-process p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.journal-volumes {
+  margin: 0;
+  padding: 1rem 1.15rem;
+  background: var(--surface);
+  border: 1px dashed var(--rule);
+  border-radius: var(--radius-sm);
+  max-width: 40rem;
+}
+
+.journal-volumes h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+
+.journal-volumes p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.journal-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 1.25rem;
 }
